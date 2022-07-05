@@ -23,7 +23,7 @@ const HomePage = () => {
     
     return(
         <div className='tc'>
-            <div className='center f3 black ba b--green br4 bw2 w-50 ma3 showdow-5'>
+            <div className='center f3 black ba b--green br4 bw2 w-60 ma3 showdow-5'>
                 <h1>GITHUB USERS' PROFILE</h1>
             </div>
             <div className='tc'>            

@@ -24,7 +24,7 @@ const UserInfo = () =>{
 
     return(
         <div className='tc'>
-            <div className='center bg-light-yellow dib br3 pa3 ma4 grow showdow-5 w-50'>
+            <div className='center bg-light-yellow dib br3 pa3 ma4 grow showdow-5 w-50-l w-92-ns w-92-m'>
                 <h2>My Profile</h2>
                 <img className='br3 w-40' src={info.avatar_url} alt='avatar'/>
                 <div className='tc'>
@@ -34,12 +34,21 @@ const UserInfo = () =>{
                         <small className='f5 pa2 purple'>Location: {info.location}</small>
                     </div>                                                              
                 </div>
-                <div className='center ma3'>
-                    <div className='bg-green white br3 dib grow w-20 ma2'>{info.public_repos}<br/>Repositories</div>
-                    <div className='bg-green white br3 dib grow w-20 ma2'>{info.followers}<br/>Followers</div>
-                    <div className='bg-green white br3 dib grow w-20 ma2'>{info.following}<br/>Following</div>     
+                <div className='center dib flex flex justify-center ma3 grow w-100'>
+                    <div className='bg-green grow white br3 w-60-ns w-60-m w-20-l ma2'>
+                        {info.public_repos}<br/>Repositories                        
+                    </div>
+                    <div className='bg-green grow white br3 w-60-ns w-60-m w-20-l ma2'>
+                        {info.followers}<br/>Followers
+                    </div>
+                    <div className='bg-green grow white br3 w-60-ns w-60-m w-20-l ma2'>
+                        {info.following}<br/>Following
+                    </div>     
                 </div>           
             </div>
+
+           
+
             <div>
                 <button onClick={()=>{navigate('/'+location.search)}} className='center dib f5 dim bg-white ba b--white purple grow w-18 br3 pa1 showdow-5'>Go Back</button> 
             </div>            

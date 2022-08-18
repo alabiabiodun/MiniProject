@@ -24,12 +24,12 @@ const UserInfo = () =>{
 
     return(
         <div className='tc'>
-            <div className='center bg-light-yellow dib br3 pa3 ma4 grow showdow-5 w-50-l w-92-ns w-92-m'>
+            <div className='center bg-light-yellow dib br3 pa3 ma4 grow shadow-5 w-50-l w-92-ns w-92-m'>
                 <h2>My Profile</h2>
                 <img className='br3 w-40' src={info.avatar_url} alt='avatar'/>
                 <div className='tc'>
                     <h3>{info.name}</h3>
-                    <div className='bg-white ba b--light-pink fw6 dib br4 grow showdow-5 w-5 pa1'>
+                    <div className='bg-white ba b--light-pink fw6 dib br4 grow shadow-5 w-5 pa1'>
                         <small className='f5 pa2 violet'>Twitter Username: {info.login}</small><br/>
                         <small className='f5 pa2 purple'>Location: {info.location}</small>
                     </div>                                                              
@@ -50,7 +50,7 @@ const UserInfo = () =>{
            
 
             <div>
-                <button onClick={()=>{navigate('/'+location.search)}} className='center dib f5 dim bg-white ba b--white purple grow w-18 br3 pa1 showdow-5'>Go Back</button> 
+                <button onClick={()=>{navigate('/'+location.search)}} className='center dib f5 dim bg-white ba b--white purple grow w-18 br3 pa1 shadow-5'>Go Back</button> 
             </div>            
 
         </div>
